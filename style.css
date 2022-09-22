@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.main-div{
+    background-image: url('https://www.fotolog.com/wp-content/uploads/2020/09/LLC-in-Texas-768x451.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white; 
+    height: 100vh;
+}
+.bar div{
+    background-color: white;
+    width: 34px;
+    height: 5px;
+    margin: 2px 0px;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+.content{
+    padding: 10%; 
+} 
+.card{
+    width: 12%;
+    text-align: center;
+    background-color: #FAFAFA;
+    padding: 30px 10px
+}
+.card p{
+    margin-top: 3px;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    position: absolute;
+    top: 85%;
+}
+.card img{
+    border-radius: 50%;
+}
+.row{
+    background-image: url('system.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 1%;
+    padding-top: 2%;
+}
+.row-content1{
+    background-color: #F2F2F2;
+    padding: 50px 20px;
+}
+.row-content2{
+    background-color: #F2F2F2;
+    padding: 50px 20px;
+}
+.row-content{
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+.main-row{
+    width: 37%;
+    margin-left: 60%;
+}
+.img-content{
+    width:100%;
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+.img-content p{
+    margin-top: 20px;
+}
+.column1{
+   display: flex;
+}
+.row3{
+    margin-top: 90px;
+}
+.row3-img{
+    /* border: 2px solid black; */
+    display: flex;
+    padding: 2% 3%;
+
+}
