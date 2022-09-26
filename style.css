@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
 }
 .main-div{
     background-image: url('https://www.fotolog.com/wp-content/uploads/2020/09/LLC-in-Texas-768x451.jpg');
@@ -12,6 +13,9 @@
 }
 .bar{
     color: white;
+}
+h1{
+    font-size: 60px;
 }
 .head{
     display: flex;
@@ -25,10 +29,11 @@
     width: 20%;
     text-align: center;
     background-color: #FAFAFA;
-    padding: 4% 10px
+    padding: 4% 10px;
+    border: 1px solid rgb(224, 223, 223);
 }
 .card p{
-    margin-top: 3px;
+    margin-top: 20px;
 }
 .cards{
     display: flex;
@@ -42,17 +47,18 @@
 }
 .row{
     background-image: url('plant.webp');
-    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 20%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    background-position: center;
+    padding-bottom: 10%;
 }
 .row-content1{
-    background-color: #F2F2F2;
-    padding: 8% 6%;
+    background-color: #F2F2F2; 
+    padding: 15% 6%; 
 }
 .row-content2{
     background-color: #F2F2F2;
@@ -63,10 +69,20 @@
     gap: 10px;
     margin-top: 20px;
 }
+.image-row{
+    margin-top: 100px;
+}
 .main-row{
-    width: 50%;
+    width: 40%;
     margin-top: 10%;
-    /* border: 2px solid black; */
+    margin-right: 40px;
+}
+.smart{
+    font-size: 20px;
+    line-height: 2.625;
+}
+.heading{
+    font-size: 20px;
 }
 
 .img-content{
@@ -77,7 +93,11 @@
     padding: 20px;
 }
 .img-content p{
+    /* line-height: 1.625; */
     margin-top: 20px;
+}
+.img-content a{
+    color: rgb(151, 63, 78);
 }
 .column1{
    display: flex;
@@ -92,17 +112,28 @@
     margin-top: 30px;
 }
 .data p{
-    margin-top: 8px;
+    line-height: 1.625;
 } 
+.best p,.responsibility p{
+    line-height: 1.3;
+    width: 60%;
+    margin-top: 10px;
+}
 .values{
     display: flex;
     font-size: 20px;
-    /* border: 2px solid black; */
     margin: 100px;
 }
 .data{
-    /* border: 2px solid black; */
+    margin-top: 10px;
     width: 100%;
+}
+h4{
+    margin-top: 20px;
+}
+.list{
+    margin-top:20px;
+    color: grey;
 }
 .data1{
     background-image: url('bg-plant.jpg');
@@ -113,47 +144,149 @@
 }
 .best-responsibility{
     display: flex;
-    margin-top: 10%;
+    margin-top: 15%;
     /* border: 2px solid black; */
     gap: 5%;
     width:60%;
 }
-.best p,.responsibility p{
-    width: 60%;
-    margin-top: 10px;
-}
 .our-products{
-    /* text-align: center;  */
-    padding: 4%; 
+    padding: 6%; 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    line-height: 1.3;
 }
 .data2{
     border: 2px solid white;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.2);
     color: white;
     font-size: 30px;
     width: 35%;
     margin: auto;
     padding: 5%;
     font-family:'poppins', sans-serif;
+    text-align: center;
 }
-.black{
-    background-color: #000000;
-    color: white;
+h6{
+    font-size: 15px;
 }
 .data3-map{
+    background-color: #000000;
+    color: white;
     display: flex;
-    justify-content: space-between;
-    padding: 2% 14%;
+    justify-content: center;
+    gap:30%;
+    padding: 4%;
 }
 .data3{
-    margin-top: 6%;
-    font-size: 20px;
+    padding-top: 8%;
+    line-height: 2.5;
 }
-.data3 p{
-    margin-top: 10px;
+.footer{
+    display: flex;
+    background-color: #313131;
+    color: white;
+    justify-content: center;
+    padding: 8%;
+    gap: 30%;
+    text-align: center;
+    line-height: 2.5;
 }
 
 
+@media (min-width:200px) and (max-width:700px){
+    .data3-map{
+        flex-direction: column;
+        padding: 0px;
+    }
+    /* .cards{
+        flex-direction: column;
+        padding: 30%;
+        top: 30%;
+    }
+    .card{
+        width: 100%;
+        margin-top: 10px;
+        border-radius: 1em;
+    } */
+    .main-div{
+        padding-bottom: 100%;
+    }
+    .main-row{
+        width: 100%;
+        margin: auto;
+    }
+    .row-content1,.row-content{
+        margin: 10px 20px;
+    }
+    .row{
+        height: 100%;
+        padding: 20px;
+    }
+    .img-content{
+        padding: 0px;
+        text-align: center;
+    }
+    .column1{
+        flex-direction: column;
+    }
+    .values{
+        flex-direction: column;
+        margin: 0px;
+    }
+    .data{
+        margin-top: 30px;
+        padding: 15px;
+    }
+    .data h4{
+        text-align: center;
+    }
+    .product{
+        padding: 10px;
+        border: 2px solid black;
+    }
+    .data1-content,.best-responsibility,.responsibility p,.best p{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .best-responsibility{
+        margin-top: 20px;
+        background-color: rgba(0,0,0,0.4);
+        color: white;
+        padding: 10px;
+    }
+    .best-responsibility p{
+        margin-top: 10px;
+    }
+    .our-products{
+        width: 100%;
+       padding: 0px;
+       padding-top: 10px;
+       padding-bottom: 10px;
+    }
+    .data2 p{
+        font-size: 20px;
+        text-align: center;
+    }
+    .row3-img{
+        flex-direction: column;
+    }
+    .row3-img img{
+        width: 100%;
+        border: 2px solid black;
+        padding: 3px;
+        height: 150px;
+        width: 150px;
+        margin: auto;
+    }
+    h6{
+        text-align: center; 
+    }
+    .data3-map{
+        text-align: center;
+    }
+    .map{
+        margin-top: 20px;
+    }
+}
